@@ -1,0 +1,10 @@
+{
+    "name": "bookmark-manager-root",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "npx concurrently --kill-others-on-fail --names \"BACKEND,FRONTEND\" -c \"bgBlue.bold,bgGreen.bold\" \"cd backend && python manage.py runserver\" \"cd frontend && npm run dev\""
+    },
+    "dependencies": {
+        "concurrently": "^9.2.1"
+    }
+}
