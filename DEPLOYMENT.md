@@ -18,7 +18,7 @@ Render is great for Python/Django apps.
     *   **Name**: `figmenta-backend` (or similar)
     *   **Root Directory**: `backend` (Important!)
     *   **Runtime**: `Python 3`
-    *   **Build Command**: `pip install -r requirements.txt`
+    *   **Build Command**: `pip install -r requirements.txt && python manage.py migrate && python manage.py seed`
     *   **Start Command**: `gunicorn config.wsgi:application --bind 0.0.0.0:$PORT`
     *   **Instance Type**: Free (if available) or Starter.
 4.  **Environment Variables**:
